@@ -5,12 +5,15 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-	box-sizing: border-box;
-  textsize
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 *, *::before, *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 img {
@@ -21,12 +24,11 @@ img:nth-child(even) {
   display: none;
 }
 
-@media only screen and (min-width:25em) {
+@media only screen and (min-width: 25em) {
+
   img {
     width: 49%;
     display: inline-block;
-    float: left;
-    margin: .1rem;
   }
 
   img:nth-child(even) {
@@ -34,7 +36,8 @@ img:nth-child(even) {
   }
 }
 
-@media only screen and (min-width:40em) {
+@media only screen and (min-width: 38em) {
+
   img {
     width: 32%;
   }
@@ -44,9 +47,10 @@ img:nth-child(even) {
   }
 }
 
-@media only screen and (min-width:60em) {
+@media only screen and (min-width: 60em) {
+
   img {
-    width: 24%;
+    width: 24.5%;
   }
 
   img:first-child {
