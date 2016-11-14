@@ -46,7 +46,7 @@ img:nth-child(even) {
 
 @media only screen and (min-width:60em) {
   img {
-    width: 25%;
+    width: 24%;
   }
 
   img:first-child {
